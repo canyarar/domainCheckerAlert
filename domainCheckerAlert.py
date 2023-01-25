@@ -8,8 +8,8 @@ def is_domain_available(domain):
         url = "https://www.whois.com/whois/" + domain
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
-        available = soup.find("div", class_="title").text
-        if "Looks like this domain has not been registered yet" in available:
+        available = soup.find("td", class_="buylink").text
+        if "Before someone else does!" in available:
             return True
         else:
             return False

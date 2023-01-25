@@ -17,7 +17,7 @@ def is_domain_available(domain):
         return False
 
 while True:
-    domain = "h3wd.com"
+    domain = "domainname.com"
     if is_domain_available(domain):
         print(colored(domain + " HEMEN ALLL!!!!!", "green"))
     else:

@@ -9,6 +9,3 @@ BeautifulSoup
 requests
 time
 colored
-
-
-and: http://www.ruyatabirleri.pw/
